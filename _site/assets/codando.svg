@@ -1,0 +1,17 @@
+<svg viewBox="0 0 100 20" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .audiowide-regular {
+      font-family: "Audiowide", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      fill: url(#gradient);
+    }
+  </style>
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#fff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#cdcfd1;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <text x="4" y="15" class="audiowide-regular">&lt;codando&gt;</text>
+</svg>

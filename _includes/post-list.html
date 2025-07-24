@@ -1,0 +1,27 @@
+
+<h1 class="page-heading">Posts</h1>
+<ul class="post-list">
+	{% for post in paginator.posts %}
+	{% if (last_post.date != post.date) %}
+	<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+	{% endif %}
+	{% assign last_post = post %}
+	{% include post-card.html %}
+	{% endfor %}
+</ul>
+
+{% if paginator.total_pages > 1 %}
+<ul class="pager">
+	{% if paginator.previous_page %}
+	<li class="previous">
+		<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Mais
+			Recentes</a>
+	</li>
+	{% endif %}
+	{% if paginator.next_page %}
+	<li class="next">
+		<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Mais Antigos &rarr;</a>
+	</li>
+	{% endif %}
+</ul>
+{% endif %}

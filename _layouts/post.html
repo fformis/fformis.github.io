@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: " en-US" }}">
+
+<body>
+  {% include navigation.html %}
+  <a id="skip-to-content" href="#content">Skip to the content.</a>
+  <main id="content" class="main-content" role="main">
+    <h1>{{ page.title}}</h>
+    <h2>{{ page.excerpt }}</h2>
+    {{ content }}
+  </main>
+</body>
+
+</html>

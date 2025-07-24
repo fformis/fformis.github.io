@@ -1,0 +1,13 @@
+<li>
+	  <div class="post-card">
+		{% if post.image %}
+		  <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+		{% endif %}
+        <h2>
+          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        </h2>
+        {% if post.excerpt != "" %}
+        <p class="post-excerpt">{{ post.excerpt }}&nbsp;</p>
+        {% endif %}
+      </div>
+    </li>

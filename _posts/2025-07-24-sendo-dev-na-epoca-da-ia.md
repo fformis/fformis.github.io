@@ -5,11 +5,11 @@ date:   2025-07-24
 categories: IA, Opinião
 excerpt: "Em tempos em que tudo é gerado por IA como se manter relevante?"
 ---
-É inquestionável que a inteligência artificial chegou e veio para ficar, por muito tempo restrita aos filmes de ficção cientifica, agora ela é realidade e mais importante que isso, acessível.
+É inquestionável que a inteligência artificial chegou e veio para ficar, por muito tempo restrita aos filmes de ficção científica, agora ela é realidade e mais importante que isso, acessível.
 
 Para a engenharia de software ela representa uma grande evolução, o resultado de vários anos de pesquisa e desenvolvimento para chegar aonde chegamos, uma inteligência artificial capaz de gerar conteúdo, contextualizar e entender a linguagem natural, até mesmo quando a comunicação não é perfeita.
 
-Para os desenvolvedores de software que não dominarem o uso da inteligência artificial como ferramenta ela será uma competidora, porque é um fato que nós humanos somos mais lentos na produção de código, e não conseguimos vascular conteúdos, documentos, mídias, quais quer sejam os recursos necessários tão rápido quanto ela.
+Para os desenvolvedores de software que não dominarem o uso da inteligência artificial como ferramenta ela será uma competidora, porque é um fato que nós humanos somos mais lentos na produção de código, e não conseguimos vasculhar conteúdos, documentos, mídias, quais quer sejam os recursos necessários tão rápido quanto ela.
 
 Para os desenvolvedores que a utilizam como uma ferramenta ela será uma grande aliada, mas para isso é necessário desenvolver habilidades, como a capacidade de criar um **prompt** bem estruturado, a tão falada **Engenharia de Prompt**, isso facilita uma resposta mais precisa e coerente com a solução para o nosso problema.
 

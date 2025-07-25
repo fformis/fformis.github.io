@@ -31,5 +31,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
-          publish_branch: main      # <-- Troque.    'gh-pages' por 'main'
+          publish_branch: gh_pages
           exclude_assets: .github

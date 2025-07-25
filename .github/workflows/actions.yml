@@ -1,9 +1,9 @@
-name: Build and Deploy Jekyll site to GitHub Pages
+name: Build and Test Jekyll site
 
 on:
   push:
     branches:
-      - main  # ou o nome do seu branch principal
+      - main
 
 jobs:
   build:
@@ -16,7 +16,7 @@ jobs:
       - name: Configurar Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '4.4.1' # ou a versão desejada
+          ruby-version: '3.2' # Versão estável do Ruby para Jekyll
 
       - name: Instalar dependências
         run: |
@@ -25,11 +25,3 @@ jobs:
 
       - name: Construir o site Jekyll
         run: bundle exec jekyll build
-
-      - name: Deploy para o GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
-          publish_branch: gh_pages
-          exclude_assets: .github

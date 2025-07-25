@@ -407,7 +407,19 @@ a {
   align-self: center; justify-self: flex-start;
 
   img {
+
+  @include large {
     width: 30rem;
+  }
+
+  @include medium {
+    width: 20rem;
+  }
+
+  @include small {
+    width: 10rem;
+  }
+
   }
 }
 

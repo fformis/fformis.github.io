@@ -5,7 +5,7 @@ date:   2025-07-24
 categories: IA, Opinião
 excerpt: "Em tempos em que tudo é gerado por IA como se manter relevante?"
 ---
-É inquestionável que a inteligência artificial chegou e veio para ficar, por muito tempo restrita aos filmes de ficção científica, agora ela é realidade e mais importante que isso, acessível.
+É inquestionável que a inteligência artificial chegou e veio para ficar, por muito tempo restrita aos filmes de ficção científica, agora ela é realidade e mais importante que isso ela chega de uma forma acessível.
 
 Para a engenharia de software ela representa uma grande evolução, o resultado de vários anos de pesquisa e desenvolvimento para chegar aonde chegamos, uma inteligência artificial capaz de gerar conteúdo, contextualizar e entender a linguagem natural, até mesmo quando a comunicação não é perfeita.
 

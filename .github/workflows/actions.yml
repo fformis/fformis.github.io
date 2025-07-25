@@ -16,7 +16,7 @@ jobs:
       - name: Configurar Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1' # Versão estável do Ruby para Jekyll
+          ruby-version: '3.2' # Versão estável do Ruby para Jekyll
 
       - name: Instalar dependências
         run: |

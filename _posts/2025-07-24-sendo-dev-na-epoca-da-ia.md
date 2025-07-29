@@ -17,6 +17,6 @@ Nem sempre a primeira resposta é a correta ou totalmente aderente ao que procur
 
 Voltando as habilidades, uma habilidade antiga que deve ser constantemente fortalecida é o conhecimento em **fundamentos de programação**, **design patterns**, **arquiteturas**, **estrutura de dados**, isso porque sem essa bagagem não é possível avaliar se a resposta da IA está de acordo com as melhores práticas, ou padrões requeridos em nossa base de código.
 
-Os **assistentes de programação** e **copilots**, devem realmente ser isso, assistentes e copilotos, delegamos a eles o trabalho pesado, tiramos o proveito de velocidade e capacidade que possuem, mas ainda sim é nossa a responsabilidade de avaliar o código gerado, sempre precisaremos revisar, avaliar e decidir se aceitamos ou não aquela implementação.
+Os **assistentes de programação** e **copilots**, devem ser realmente o que o nome diz, assistentes e copilotos, delegamos a eles o trabalho pesado, tiramos o proveito de velocidade e capacidade que possuem, mas ainda sim é nossa a responsabilidade de avaliar o código gerado, sempre precisaremos revisar, avaliar e decidir se aceitamos ou não aquela implementação.
 
 Não estou querendo ser cético quanto a capacidade da IA, longe disso, na verdade eu sou um grande fã e usuário diário dela, mas estou consciente de que o cargo de **piloto** ainda é meu.

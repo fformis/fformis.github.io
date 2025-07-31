@@ -4,7 +4,7 @@
 		  <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
 		{% endif %}
         <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}&nbsp;<span class="parts">{{ post.parts | escape }}</span></a>
         </h2>
         {% if post.excerpt != "" %}
         <p class="post-excerpt">{{ post.excerpt }}&nbsp;</p>

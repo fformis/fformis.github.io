@@ -2,8 +2,8 @@
 <h1 class="page-heading">Posts</h1>
 <ul class="post-list">
 	{% for post in paginator.posts %}
-	{% if (last_post.date != post.date) %}
-	<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+	{% if (last_post.month != post.month && last_post.year != post.year) %}
+	<span class="post-date">{{ post.month }}/{{ post.year }}</span>
 	{% endif %}
 	{% assign last_post = post %}
 	{% include post-card.html %}

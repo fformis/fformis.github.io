@@ -39,6 +39,7 @@ body {
   font-size: 14px;
   line-height: 1.5;
   color: $body-text-color;
+  height: 100%;
 }
 
 .parts {
@@ -91,7 +92,7 @@ a {
     border-color: rgba(255, 255, 255, 0.3);
   }
 
-  + .btn {
+  +.btn {
     margin-left: 1rem;
   }
 
@@ -110,7 +111,7 @@ a {
     padding: 0.75rem;
     font-size: 0.9rem;
 
-    + .btn {
+    +.btn {
       margin-top: 1rem;
       margin-left: 0;
     }
@@ -199,7 +200,7 @@ a {
     padding: 2rem 1rem;
     font-size: 1rem;
   }
-  
+
   kbd {
     background-color: #fafbfc;
     border: 1px solid #c6cbd1;
@@ -237,6 +238,39 @@ a {
     font-size: 0.9rem;
   }
 
+  .author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    .author-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .author-info-side {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .author-name {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .author-bio {
+      font-size: 1rem;
+      color: $code-text-color;
+    }
+
+    .author-avatar {
+      width: 100px;
+      height: 100px;
+      margin-right: 1rem;
+    }
+  }
+
   code {
     padding: 2px 4px;
     font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
@@ -244,7 +278,24 @@ a {
     color: $code-text-color;
     background-color: $code-bg-color;
     border-radius: 0.3rem;
+
+
   }
+
+
+
+  .code-header {
+    position: relative;
+    bottom: -1.5rem;
+    left: -0.5rem;
+    display: flex;
+    justify-content: right;
+
+    .copy-code-button {
+      align-self: flex-end;
+    }
+  }
+
 
   pre {
     padding: 0.8rem;
@@ -257,7 +308,9 @@ a {
     border: solid 1px $border-color;
     border-radius: 0.3rem;
 
-    > code {
+
+
+    >code {
       padding: 0;
       margin: 0;
       font-size: 0.9rem;
@@ -266,6 +319,9 @@ a {
       white-space: pre;
       background: transparent;
       border: 0;
+
+
+
     }
   }
 
@@ -305,6 +361,8 @@ a {
       content: normal;
     }
   }
+
+
 
   ul,
   ol {
@@ -372,8 +430,10 @@ a {
 
 .site-footer {
   text-align: center;
-  padding-top: 2rem;
-  margin-top: 2rem;
+  padding: 1rem;
+  margin: 1rem;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
   border-top: solid 1px $hr-border-color;
 
   @include large {
@@ -407,35 +467,42 @@ a {
     width: 32px;
     gap: 0.5rem;
     margin: 0 0.5rem;
- }
+  }
+    div {
+      width: 32px;
+      gap: 0.5rem;
+      margin: 0 0.5rem;
+    }
 
 
 }
 
 .logo {
-  
-  align-self: center; justify-self: flex-start;
+
+  align-self: center;
+  justify-self: flex-start;
 
   img {
 
-  @include large {
-    width: 30rem;
-  }
+    @include large {
+      width: 30rem;
+    }
 
-  @include medium {
-    width: 20rem;
-  }
+    @include medium {
+      width: 20rem;
+    }
 
-  @include small {
-    width: 10rem;
-  }
+    @include small {
+      width: 10rem;
+    }
 
   }
 }
 
 .social {
 
-  align-self: center; justify-self: flex-end;
+  align-self: center;
+  justify-self: flex-end;
 
   img {
     width: 32px;
@@ -444,6 +511,7 @@ a {
 }
 
 .post-list {
+  list-style-type: none;
 
   .post-list.li {
     list-style-type: none;
@@ -452,9 +520,9 @@ a {
 }
 
 .post-card {
-  margin: 0.5rem; 
-  padding: 0.5rem; 
-  background-color: #f4f3f3; 
+  margin: 0.5rem;
+  padding: 0.5rem;
+  background-color: #f4f3f3;
   border-radius: 5px;
 
   .post-card.img {
@@ -469,7 +537,35 @@ a {
   color: $excerpt-text-color;
 }
 
+.post-meta-author {
+  margin-top: 2rem;
+  display: block;
+  font-size: 1.0rem;
+  font-weight: normal;
+  text-align: center !important;
+  color: $blockquote-text-color;
+  text-indent: 0rem !important;
+
+  a {
+    color: $blockquote-text-color;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
 .post-meta {
+  display: block;
+  font-size: 1.0rem;
+  font-weight: normal;
+  text-align: end !important;
+  align-self: flex-end;
+  color: $blockquote-text-color;
+}
+
+.post-date {
   display: block;
   margin-bottom: 0.5rem;
   font-size: 1.0rem;
@@ -478,14 +574,14 @@ a {
 }
 
 ul.pager {
-		text-align: center;
-		list-style: none;
-	}
+  text-align: center;
+  list-style: none;
+}
 
-	ul.pager li {
-		display: inline;
-		border: 1px solid #202124;
-		border-radius: 5px;
-		padding: 10px;
-		margin: 5px;
-	}
+ul.pager li {
+  display: inline;
+  border: 1px solid #202124;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+}

@@ -2,8 +2,11 @@
 layout: post
 title:  "Sendo dev na época da IA"
 date:   2025-07-24
-categories: "IA, Opinião"
+categories: IA Opinião
 excerpt: "Em tempos em que tudo é gerado por IA, como se manter relevante?"
+tags: IA Desenvolvimento Opinião
+month: "Julho"
+year: "2025"
 ---
 É inquestionável que a inteligência artificial chegou e veio para ficar. Por muito tempo restrita aos filmes de ficção científica, agora ela é realidade e, mais importante que isso, ela chega de uma forma acessível.
 

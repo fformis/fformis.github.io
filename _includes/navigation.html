@@ -1,13 +1,17 @@
-<div class="navigation" >
-    {% if page.previous %}
-    <a href="{{ page.previous.url }}" title="{{ page.previous.title }}"><img
-            src="{{ './assets/arrow-left.svg' | relative_url }}" alt="previous" title="{{ page.previous.title }}"></a>
-    {% endif %}
-        <a href="/"><img src="{{ './assets/house-fill.svg' | relative_url }}" alt="home"
-                title="Home"></a>
-    {% if page.next %}
-    <a href="{{ page.next.url }}" title="{{ page.next.title }}"><img
-            src="{{ './assets/arrow-right.svg' | relative_url }}" alt="next"
-            title="{{ page.next.title }}"></a>
-    {% endif %}
+<div class="navigation">
+        {% if page.previous %}
+        <a href="{{ page.previous.url }}" title="{{ page.previous.title }}"><img
+                        src="{{ './assets/arrow-left.svg' | relative_url }}" alt="previous"
+                        title="{{ page.previous.title }} {{ page.previous.parts }}"></a>
+        {% else %}
+        <div></div>
+        {% endif %}
+        <a href="/"><img src="{{ './assets/house-fill.svg' | relative_url }}" alt="home" title="Home"></a>
+        {% if page.next %}
+        <a href="{{ page.next.url }}" title="{{ page.next.title }}"><img
+                        src="{{ './assets/arrow-right.svg' | relative_url }}" alt="next"
+                        title="{{ page.next.title }} {{ page.next.parts }}" ></a>
+        {% else %}
+        <div></div>
+        {% endif %}
 </div>

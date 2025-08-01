@@ -43,6 +43,11 @@ pagination:
   sort_field: 'date'
   sort_reverse: true
 
+author:
+  name: "Flávio José Formis"
+  bio: "Flávio é um desenvolvedor de software apaixonado por compartilhar conhecimento e experiências. Com anos de atuação na área, ele busca ajudar outros profissionais e transmitir suas experiências através de seu blog."
+  image: "/assets/author.png"
+
 # Produces a cleaner folder structure when using categories
 permalink: /:year/:month/:title.html
 

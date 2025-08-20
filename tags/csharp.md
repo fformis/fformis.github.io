@@ -1,6 +1,6 @@
 ---
 layout: tags
-title: dotnet
+title: C#
 posts: [
 {title: "File-Based Apps", parts: , excerpt: "Uma das novidades mais legais do .Net 10 é o suporte a aplicativos baseados em arquivos.", url: /2025/08/file-based-apps}
 ]

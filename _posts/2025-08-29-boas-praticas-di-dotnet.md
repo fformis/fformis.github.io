@@ -27,6 +27,7 @@ Portanto, é fundamental analisar o comportamento e as necessidades de cada serv
 Agora vamos entender como registrar serviços no contêiner de Injeção de Dependência do .NET.
 Uma boa prática é definir a interface do serviço e a implementação em classes separadas. Isso facilita a manutenção e os testes, isso permite que possamos trocar a implementação do serviço sem afetar o código que depende dele.
 
+{% include code-header.html %}
 ```csharp
 public interface IMeuServico
 {
@@ -41,20 +42,18 @@ public class MeuServico : IMeuServico
     }
 }
 ```
-**Transient**
-
+**Transient** 
+{% include code-header.html %}
 ```csharp
 services.AddTransient<IMeuServico, MeuServico>();
 ```
-
-**Scoped**
-
+**Scoped** 
+{% include code-header.html %}
 ```csharp
 services.AddScoped<IMeuServico, MeuServico>();
 ```
-
-**Singleton**
-
+**Singleton** 
+{% include code-header.html %}
 ```csharp
 services.AddSingleton<IMeuServico, MeuServico>();
 ```
@@ -65,6 +64,7 @@ Sempre que possível, utilize a Injeção de Dependência para obter instâncias
 
 Abaixo um exemplo de como utilizar a Injeção de Dependência por meio do construtor:
 
+{% include code-header.html %}
 ```csharp
 public class MeuController : ControllerBase
 {
@@ -85,6 +85,7 @@ public class MeuController : ControllerBase
 
 Abaixo um exemplo de como utilizar a Injeção de Dependência por meio de uma propriedade:
 
+{% include code-header.html %}
 ```csharp
 public class MeuController : ControllerBase
 {
@@ -101,6 +102,7 @@ public class MeuController : ControllerBase
 
 Abaixo um exemplo de como utilizar a Injeção de Dependência por parte do método:
 
+{% include code-header.html %}
 ```csharp
 public class MeuController : ControllerBase
 {

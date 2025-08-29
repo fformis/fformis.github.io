@@ -18,6 +18,7 @@ Lógico que não é ideal para aplicações grandes ou complexas, para pequenos 
 
 Vamos a um exemplo prático, imagine um arquivo chamado `app.cs` com o seguinte conteúdo:
 
+{% include code-header.html %}
 ```csharp
 
 File.ReadLines("input.txt")
@@ -28,13 +29,14 @@ File.ReadLines("input.txt")
 Nesse exemplo, estamos apenas lendo o arquivo `input.txt` e exibindo seu conteúdo no console.
 Para executar esse arquivo é basta:
 
+{% include code-header.html %}
 ```powershell
-
 dotnet run app.cs
 ```
 
 Para executar em ambientes Unix, como o **Linux**, além do comando acima, você pode usar a diretiva **shebang** para indicar o dotnet na execução do script:
 
+{% include code-header.html %}
 ```csharp
 #!/usr/bin/env dotnet
 
@@ -45,12 +47,14 @@ File.ReadLines("input.txt")
 ```
 No bash, você pode tornar o script executável com o comando:
 
+{% include code-header.html %}
 ```bash
 chmod +x app.cs
 ```
 
 E então você pode executá-lo diretamente:
 
+{% include code-header.html %}
 ```bash
 ./app.cs
 ```	

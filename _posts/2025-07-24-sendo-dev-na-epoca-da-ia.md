@@ -5,6 +5,7 @@ date:   2025-07-24
 categories: [Opinião]
 excerpt: "Em tempos em que tudo é gerado por IA, como se manter relevante?"
 tags: [IA, Desenvolvimento, Opinião]
+tagFile: [ia, desenvolvimento, opiniao]
 month: "Julho"
 year: "2025"
 ---

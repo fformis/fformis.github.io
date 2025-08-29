@@ -5,6 +5,7 @@ date:   2025-08-19
 categories: [Clean Architecture, Programação, Desenvolvimento, dotnet, C#, CSharp]
 excerpt: "A Clean Architecture é uma das arquiteturas mais faladas em desenvolvimento de software. Vamos entender o que é e como aplicá-la."
 tags: [Clean Architecture]
+tagFile: [clean-architecture]
 parts: 
 month: "Agosto"
 year: "2025"
@@ -37,7 +38,7 @@ Como um exemplo de implementação da Clean Architecture, podemos considerar uma
 
 A camada **CleanArchitecture.Domain** contém as entidades, regras de negócio mais fortes e abstrações que serão os contratos entre as camadas mais externas, enquanto a camada **CleanArchitecture.Application** contém os casos de uso. A camada **CleanArchitecture.Infrastructure** implementa os detalhes técnicos, como acesso a banco de dados e serviços externos, e a camada **CleanArchitecture.Api** expõe a API para o mundo exterior. 
 
-Notem que os bullets estão marcados com a cor de cada camada, porém a camada de Frameworks and Drivers não está identificada, isso porque muitas vezes ela acaba se misturando com a camada de Interface Adapters, como mostrado na documentação da [Microsoft](https://learn.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/common-web-application-architectures).
+Notem os bullets estão marcados com a cor de cada camada, porém a camada de Frameworks and Drivers não está identificada, isso porque muitas vezes ela acaba se misturando com a camada de Interface Adapters, como mostrado na documentação da [Microsoft](https://learn.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/common-web-application-architectures).
 
 ## Referências
 - [Clean Architecture](https://learn.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/common-web-application-architectures)

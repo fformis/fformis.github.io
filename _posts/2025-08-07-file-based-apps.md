@@ -4,7 +4,8 @@ title:  "File-Based Apps"
 date:   2025-08-07
 categories: [Programação, Desenvolvimento, dotnet, C#, CSharp]
 excerpt: "Uma das novidades mais legais do .Net 10 é o suporte a aplicativos baseados em arquivos."
-tags: [C#, dotnet, ".net 10"]
+tags: [C#, dotnet, .net 10]
+tagFile: [csharp, dotnet, net10]
 parts: 
 month: "Agosto"
 year: "2025"

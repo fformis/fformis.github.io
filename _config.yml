@@ -24,6 +24,7 @@ description: >-
   Blog dedicado a tecnologia, programação e desenvolvimento de software, com foco em dicas práticas, tutoriais detalhados e novidades do universo tech.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://blog.codando.pro" # the base hostname & protocol for your site, e.g. http://example.com
+canonical_url: "https://blog.codando.pro"
 name: blog.codando.pro
 
 # Build settings

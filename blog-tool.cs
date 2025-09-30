@@ -80,11 +80,11 @@ foreach (var tag in tagsCloud.Keys)
 	var tagAddress = sb.ToString().Normalize(NormalizationForm.FormC).ToLower();
 
 	Random rand = new Random();
-	int index = rand.Next(2,8);
+	int index = rand.Next(2, 8);
 	//tagsLi.Add($"<li><a data-weight='{(tagsCount[tag] > 10 ? 9 : tagsCount[tag])}' href='/tags/{tagsFiles[tag]}'>{tag}</a></li>");
 	tagsLi.Add($"<li><a data-weight='{index}' href='/tags/{tagsFiles[tag]}'>{tagsTitles[tag]}</a></li>");
 
-	File.WriteAllText($"E:\\fformis\\blog\\blog-codando-pro\\tags\\{tagsFiles[tag]}.md", stringBuilder.ToString());
+	File.WriteAllText($"E:\\fformis\\blog\\fformis.github.io\\tags\\{tagsFiles[tag]}.md", stringBuilder.ToString());
 }
 
 StringBuilder sbLi = new StringBuilder();
@@ -94,7 +94,7 @@ tagsLi.ForEach(li => sbLi.AppendLine("		" + li));
 sbLi.AppendLine("	</ul>");
 sbLi.AppendLine("</div>");
 
-File.WriteAllText($"E:\\fformis\\blog\\blog-codando-pro\\_includes\\tags.html", sbLi.ToString());
+File.WriteAllText($"E:\\fformis\\blog\\fformis.github.io\\_includes\\tags.html", sbLi.ToString());
 
 
 public class Post
